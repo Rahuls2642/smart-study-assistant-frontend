@@ -9,7 +9,7 @@ const Home = () => {
   
       <section className="relative px-6 pt-28 pb-20 text-center overflow-hidden">
 
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.08),transparent_60%)]" />
+        <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.08),transparent_60%)]" />
 
         <h1 className="text-5xl md:text-6xl font-semibold tracking-tight leading-tight mb-6">
           Study smarter with your documents
@@ -121,9 +121,25 @@ const Home = () => {
       </section>
 
   
-      <footer className="text-center py-8 text-gray-400 text-sm border-t border-gray-100">
-        © 2026 Smart Study Assistant
-      </footer>
+      <footer className="text-center py-10 text-gray-400 text-sm border-t border-gray-100">
+  <div className="mb-2">
+    © 2026 Smart Study Assistant
+  </div>
+
+  <div className="flex justify-center gap-6 mb-3">
+    <a href="https://github.com/Rahuls2642" target="_blank" className="hover:text-black">
+      GitHub
+    </a>
+    <a href="mailto:rahuls6408@gmail.com" className="hover:text-black">
+      Email
+    </a>
+  </div>
+
+  <div className="flex justify-center gap-6 text-xs">
+    <span className="hover:text-black cursor-pointer">Privacy</span>
+    <span className="hover:text-black cursor-pointer">Terms</span>
+  </div>
+</footer>
     </div>
   );
 };
