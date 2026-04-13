@@ -48,7 +48,7 @@ const Upload = () => {
         {file ? (
           <div className="flex items-center gap-2 text-sm text-gray-600">
 
-            <span className="max-w-[180px] truncate">
+            <span className="=truncate">
               {file.name}
             </span>
 
