@@ -18,7 +18,7 @@ const Login = ({ setIsAuth }) => {
 
       localStorage.setItem("token", res.data.token);
       setIsAuth(true);
-      navigate("/");
+      navigate("/app");
     } catch (err) {
       console.error("Login failed:", err.response?.data?.message || err.message);
       alert("Invalid credentials. Please try again.");
